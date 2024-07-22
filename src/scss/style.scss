@@ -1,0 +1,272 @@
+// Variables
+$primary-color: #3751FF;
+$sidebar-bg: #363740;
+$sidebar-text: #A4A6B3;
+$body-bg: #F7F8FC;
+$card-border: #DFE0EB;
+$text-muted: #9FA2B4;
+$text-dark: #252733;
+
+
+// Base styles
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: $body-bg;
+}
+
+// Sidebar
+.sidebar {
+    background-color: $sidebar-bg;
+    color: $sidebar-text;
+    height: 100vh;
+
+    min-height: 100vh;
+    position: sticky;
+    top: 0;
+
+    .logo-circle {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background-color: $primary-color;
+    }
+
+    .sidebar-title {
+        color: $sidebar-text;
+        font-weight: 700;
+        margin-left: 0.5rem;
+    }
+
+    .nav-flex-column {
+        .nav-link {
+            color: $sidebar-text;
+            padding: 0.75rem 1rem;
+            border-radius: 0.25rem;
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+
+            &:hover, &.active {
+                color: lighten($sidebar-text, 20%);
+                background-color: rgba(159, 162, 180, 0.08);
+            }
+        }
+    }
+
+}
+
+// Main content
+.main-content {
+    padding: 2rem;
+
+    h1 {
+        color: $text-dark;
+        font-weight: 700;
+    }
+}
+
+
+.topside-icon i {
+    margin-right: 20px; /* Adjust this value to set the desired distance between icons */
+    color: $text-muted;
+}
+
+
+
+// Statistics cards
+.card-statistics {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid $card-border;
+    background-color: #FFFFFF;
+
+    h2 {
+        margin: 0;
+        color: $text-dark;
+        font-weight: 700;
+    }
+
+    h5 {
+        margin: 0.5rem 0 1rem;
+        color: $text-muted;
+    }
+}
+
+// Trends chart
+.trends-chart {
+    background-color: #FFFFFF;
+    border: 1px solid $card-border;
+    border-radius: 0.5rem;
+    padding: 1rem;
+
+    .chart-title {
+        color: $text-dark;
+        font-weight: 700;
+    }
+
+    .chart-subtitle {
+        color: $text-muted;
+        font-size: 0.9rem;
+    }
+}
+
+
+// Unresolved tickets and Tasks
+.card {
+    background-color: #FFFFFF;
+    border: 1px solid $card-border;
+    border-radius: 0.5rem;
+
+    .card-title {
+        color: $text-dark;
+        font-weight: 700;
+    }
+
+    .card-text {
+        color: $text-muted;
+    }
+
+    .list-group-item {
+        border: none;
+        padding: 0.75rem 0;
+        display: flex;
+        column-gap: 5px;
+        justify-content: space-between;
+        align-items: center;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $card-border;
+        }
+    }
+
+    .badge {
+        font-weight: 600;
+        padding: 0.25rem 0.5rem;
+        border-radius: 1rem;
+    }
+     
+}
+
+
+
+// Base styles for the overdue card
+.card-statistics {
+    &:hover {
+            border: 1px solid $primary-color;
+            h2, h5 {
+                color: $primary-color;
+        }
+    }
+
+}
+
+
+// User info in header
+.user-info {
+    display: flex;
+    align-items: center;
+
+    span {
+        color: $text-dark;
+        font-weight: 600;
+        margin-right: 0.5rem;
+    }
+
+    img {
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+    }
+}
+
+// Search input
+.form-control {
+    border: 1px solid $card-border;
+    border-radius: 0.25rem;
+
+    &::placeholder {
+        color: $text-muted;
+    }
+}
+
+#create-new-ticket {
+    color: $text-muted;
+    margin-bottom: 2px;
+}
+
+.trends-card {
+    .card-body {
+        padding: 1.5rem;
+        position: relative;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $text-dark;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-muted {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .trends-stats {
+        border-left: 1px solid $card-border;
+        padding-left: 1.5rem;
+
+        .stat-item {
+            padding: 1rem 0;
+            border-bottom: 1px solid $card-border;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            p {
+                font-size: 0.85rem;
+                color: $text-muted;
+                margin-bottom: 0.25rem;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $text-dark;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.card-link {
+    color: $primary-color;
+    padding: 1rem;
+    text-decoration: none !important;
+    &:visited {
+        text-decoration: none !important;
+    }
+}
+
+.bottom-item-card {
+    padding: 0px 15px;
+    height: 100%;
+}
+
+.graphcardleft {
+    text-align: center;
+}
+
+
+/* Media query for mobile phones and below (up to 576px) */
+@media (max-width: 576px) {
+    .sidebar {
+        position: inherit;
+    }
+}

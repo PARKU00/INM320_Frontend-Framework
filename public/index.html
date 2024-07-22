@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inm320_frontedframwork_jukyungpark</title>
+    <!-- Css reset-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+    <!--Extermal Css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Sidebar -->
+            <div class="col-md-2 sidebar">
+                <div class="d-flex flex-column py-4">
+                    <div class="d-flex">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="16" r="16" fill="#3751FF"/>
+                            <path d="M11 10C11 9.44772 11.4477 9 12 9H15.9905C18.2127 9 19.9333 9.60955 21.1524 10.8287C22.3841 12.0478 23 13.765 23 15.9803C23 18.2088 22.3841 19.9391 21.1524 21.1713C19.9333 22.3904 18.2127 23 15.9905 23H12C11.4477 23 11 22.5523 11 22V10Z" fill="url(#paint0_linear_584_285)"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_584_285" x1="11" y1="9" x2="23" y2="23" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="white" stop-opacity="0.7"/>
+                            <stop offset="1" stop-color="white"/>
+                            </linearGradient>
+                            </defs>
+                            </svg>
+                        <p class="sidebar-title">Dashboard Kit</p>
+                    </div>
+                    <nav class="nav-flex-column">
+                        <a class="nav-link active" href="#"> <i class="bi bi-pie-chart-fill"></i> Overview</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-ticket-perforated-fill"></i> Tickets</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-lightbulb-fill"></i> Ideas</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-people-fill"></i> Contacts</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-person-exclamation"></i> Agents</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-journals"></i> Articles</a>
+                        <hr>
+                        <a class="nav-link" href="#"> <i class="bi bi-gear-fill"></i> Settings</a>
+                        <a class="nav-link" href="#"> <i class="bi bi-award-fill"></i> Subscription</a>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-md-10 main-content">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h1>Overview</h1>
+                    <div class="d-flex align-items-center">
+                        <div class="d-flex align-items-center">
+                            <div class="user-info d-flex align-items-center">
+                                <div class="topside-icon">
+                                    <i class="bi bi-search"></i>
+                                    <i class="bi bi-bell-fill"></i>
+                                </div>
+                                <span class="me-2">Jones Ferdinand</span>
+                                <img src="assets/images/stray-kids-felix.jpg" alt="User Avatar" class="rounded-circle" width="32" height="32">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card card-statistics">
+                            <h5>Unresolved</h5>
+                            <h2>60</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-statistics">
+                            <h5>Overdue</h5>
+                            <h2>16</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-statistics">
+                            <h5>Open</h5>
+                            <h2>43</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card card-statistics">
+                            <h5>On hold</h5>
+                            <h2>64</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-lg-8 pe-lg-0">
+                          <h5 class="card-title fw-bold">Today's trends</h5>
+                          <!-- <p class="text-muted small">as of 25 May 2019, 09:41 PM</p> -->
+                          <img src="assets/images/graph.png" class="img-fluid" alt="Today's trends graph">
+                        </div>
+                        <div class="col-lg-4 ps-lg-0 graphcardleft">
+                          <div class="trends-stats h-100 d-flex flex-column justify-content-between border-start">
+                            <div class="stat-item p-3">
+                              <p class="text-muted mb-1 small">Resolved</p>
+                              <h3 class="fw-bold mb-0">449</h3>
+                            </div>
+                            <div class="stat-item p-3 border-top">
+                              <p class="text-muted mb-1 small">Received</p>
+                              <h3 class="fw-bold mb-0">426</h3>
+                            </div>
+                            <div class="stat-item p-3 border-top">
+                              <p class="text-muted mb-1 small">Average first response time</p>
+                              <h3 class="fw-bold mb-0">33m</h3>
+                            </div>
+                            <div class="stat-item p-3 border-top">
+                              <p class="text-muted mb-1 small">Average response time</p>
+                              <h3 class="fw-bold mb-0">3h 8m</h3>
+                            </div>
+                            <div class="stat-item p-3 border-top">
+                              <p class="text-muted mb-1 small">Resolution within SLA</p>
+                              <h3 class="fw-bold mb-0">94%</h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-8">
+                        <div class="card bottom-item-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Unresolved tickets</h5>
+                                <a href="#" class="card-link position-absolute top-0 end-0 p-3">View details</a>
+                                <p class="card-text">Group: Support</p>
+                                <ul class="list-group list-group-flush ">
+                                    <li class="list-group-item">Waiting on Feature Request <span
+                                            class="badge bg-secondary ">4238</span></li>
+                                    <li class="list-group-item">Awaiting Customer Response <span
+                                            class="badge bg-secondary">1005</span></li>
+                                    <li class="list-group-item">Awaiting Developer Fix <span
+                                            class="badge bg-secondary">914</span></li>
+                                    <li class="list-group-item">Pending <span class="badge bg-secondary">281</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card bottom-item-card">
+                            <div class="card-body">
+                                <h5 class="card-title">Tasks</h5>
+                                <a href="#" class="card-link position-absolute top-0 end-0 p-3">View all</a>
+                                <p class="card-text">Today</p>
+                                <ul class="list-group list-group-flush">
+
+                                    <li class="list-group-item task-item"> 
+                                        <p id="create-new-ticket">Create new task</p>
+                                    </li>
+                                    <li class="list-group-item task-item"> 
+                                        <input type="checkbox" id="finish-ticket">
+                                        <label for="finish-ticket">Finish ticket update</label>
+                                        <span class="badge bg-warning">URGENT</span>
+                                    </li>
+                                    <li class="list-group-item task-item">
+                                        <input type="checkbox" id="create-new-ticket">
+                                        <label for="create-new-ticket">Create new ticket example</label>
+                                        <span class="badge bg-success">NEW</span>
+                                    </li>
+                                    <li class="list-group-item task-item">
+                                        <input type="checkbox" id="update-ticket-report">
+                                        <label for="update-ticket-report">Update ticket report</label>
+                                        <span class="badge bg-primary">DEFAULT</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+</body>
+
+</html>
